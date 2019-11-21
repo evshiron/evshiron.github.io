@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - lts/*
+cache:
+  directories:
+  - $HOME/.npm
+install:
+  - npm ci
+script:
+  - npm run build
+  - npm run export
+  - touch out/.nojekyll
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: out
+  target_branch: master
+  github-token:
+    secure: bZ3bWRlTggVEBTvgMAFsRL7C/opOXUO0I/yoPabgzRXAe9rTLbzqAd/wD8CXSnWd6bYvpkMcjqMRpNDpmkvEbSYjb2EbAImHzprLGZldQm3hOdPiF6fix9n/TN0KCkMb5RhkYn2TnhLwnmekwjskIXcdcR7XQfo87Nko2sgXhfygjrsbFISyvKdZwMEm2QoAB1BiIBWuWM+dAQo9HQCZdG4FXyBZzIWYkBPBupiXb+UguVMIArTF2OoLkAnoBAnZ6H+gL+D9V6ybZ4JiZRXAIPAOHiFQNTSiGUSYNyaDZus4oKqLmu0zb4iCLhVYbtyznZ9n/ZX22EJlFm1mGNkxfIB6Usf8kW8D7ti2eGGnkJrvHLFaC7FclLV5odX/IGM4mOqtG78S5tbN92CZHVGCVdyPg2DeMmSP3Z8myvaBPbhukyS3ARvDlD4StcYNgAgwFkvm4xXp73LZWTTBE4dwfJaTJf0NIlahrDxDIJ/epCbpFMbimnimK2nDhWiw8M456dKYd9l/xcL5OYVlLELfTD/AtmnT4fouSywoshK8JVr6KoSTpxwSMUo64xNT8KpMTEOY47jj9L8X8inm16OAmk6XLZBMp7EuUN5eybtF1DSl/J6hq1IgbEwz18TG9eYj4f2aUBe9E55zAcKdoIh4YSfevV3acLgElDsZn596cV8=
+  on:
+    branch: source
