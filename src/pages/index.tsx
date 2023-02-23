@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <main className="flex select-none flex-col items-center rounded-lg bg-white p-4 shadow-lg sm:p-8">
+      <main className="m-4 flex max-w-[100vw] select-none flex-col items-center rounded-lg bg-white p-4 shadow-lg sm:p-8">
         <img
           className="block h-48 w-48 rounded-full shadow-md"
           src="https://avatars.githubusercontent.com/u/8800643?v=4"
@@ -20,7 +20,9 @@ export default function Home() {
         <div className="mt-2 text-gray-600">Passionate web developer</div>
         <div className="mt-8 flex justify-center gap-4">
           <LinkButton href="/portfolio">Portfolio</LinkButton>
-          <LinkButton href="https://github.com/evshiron" target="_blank">GitHub</LinkButton>
+          <LinkButton href="https://github.com/evshiron" target="_blank">
+            GitHub
+          </LinkButton>
         </div>
       </main>
     </>

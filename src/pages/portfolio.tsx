@@ -9,7 +9,9 @@ function Section(props: PropsWithChildren) {
 }
 
 function SectionTitle(props: PropsWithChildren) {
-  return <h3 className="text-center text-xl leading-loose">{props.children}</h3>;
+  return (
+    <h3 className="text-center text-xl leading-loose">{props.children}</h3>
+  );
 }
 
 function Key(props: PropsWithChildren) {
@@ -27,7 +29,7 @@ export default function Portfolio() {
         <title>Portfolio</title>
       </Head>
 
-      <main className="container relative flex min-w-max select-none flex-col items-stretch gap-4 rounded-lg bg-white p-8 pt-12 shadow-lg">
+      <main className="container relative my-4 flex max-w-[100vw] select-none flex-col items-stretch gap-4 rounded-lg bg-white p-8 pt-12 shadow-lg">
         <Link
           className="absolute left-4 top-4 flex items-center justify-center text-sm"
           href="/"

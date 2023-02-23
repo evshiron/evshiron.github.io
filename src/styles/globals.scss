@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: skyblue;
+}
+
+.markdown {
+  @apply max-w-min leading-loose;
+
+  h1 {
+    @apply text-3xl leading-loose;
+  }
+
+  h2 {
+    @apply text-2xl leading-loose;
+  }
+
+  h3 {
+    @apply text-xl leading-loose;
+  }
+
+  h4 {
+    @apply text-lg leading-loose;
+  }
+
+  ul {
+    @apply list-inside list-disc;
+  }
+
+  ol {
+    @apply list-inside list-decimal;
+  }
+
+  a {
+    @apply text-sky-600;
+  }
+
+  code {
+    @apply bg-gray-100 px-1 py-0.5 text-gray-600;
+  }
+
+  pre {
+    @apply overflow-y-auto bg-gray-100 p-4 leading-loose;
+  }
+
+  blockquote {
+    @apply bg-gray-100 p-4 leading-loose;
+  }
+}
