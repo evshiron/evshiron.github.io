@@ -42,10 +42,10 @@ body {
   }
 
   pre {
-    @apply overflow-y-auto bg-gray-100 p-4 leading-loose;
+    @apply my-4 overflow-y-auto bg-gray-100 px-4 py-2 leading-loose;
   }
 
   blockquote {
-    @apply bg-gray-100 p-4 leading-loose;
+    @apply my-4 bg-gray-100 px-4 py-2 leading-loose;
   }
 }
