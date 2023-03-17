@@ -7,7 +7,7 @@ body {
 }
 
 .markdown {
-  @apply max-w-min leading-loose;
+  @apply max-w-min;
 
   h1 {
     @apply text-3xl leading-loose;
@@ -23,6 +23,10 @@ body {
 
   h4 {
     @apply text-lg leading-loose;
+  }
+
+  p {
+    @apply my-4;
   }
 
   ul {
@@ -42,10 +46,10 @@ body {
   }
 
   pre {
-    @apply my-4 overflow-y-auto bg-gray-100 px-4 py-2 leading-loose;
+    @apply my-4 overflow-y-auto bg-gray-100 px-4 py-2;
   }
 
   blockquote {
-    @apply my-4 bg-gray-100 px-4 py-2 leading-loose;
+    @apply my-4 bg-gray-100 px-4 py-2;
   }
 }
